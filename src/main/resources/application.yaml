@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: god-a-rede-app-user-service
+  threads:
+    virtual:
+      enabled: true
+  datasource:
+    url: jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/${DATABASE_NAME:postgres}
+    username: ${DATABASE_USER:root}
+    password: ${DATABASE_PASSWORD:root}
+
+server:
+  port: 8082
+
